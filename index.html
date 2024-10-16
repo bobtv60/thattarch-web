@@ -22,17 +22,6 @@
           background-position: 0% 50%;
         }
       }
-      body::before {
-      content: '';
-      position: fixed; /* Fixes the overlay in place while scrolling */
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.35); /* Semi-transparent black */
-      z-index: 1; /* Ensures it stays on top of the gradient */
-      pointer-events: none; /* Allows interaction with the page content */
-    }
       /* Apply the gradient to the body or container */
       body {
         height: 100vh;
@@ -42,6 +31,11 @@
         animation: gradientAnimation 15s ease infinite; /* 15s duration, ease effect */
         position: relative; /* Required for the overlay positioning */
       }
+    @media (max-width: 768px) {
+      body {
+        background-size: 300% 300%; /* Smaller background size for mobile */
+      }
+    }
     </style>
   </head>
   <body>
