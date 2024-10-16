@@ -2,59 +2,45 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#2B2D31" />
-  <meta property="og:type" content="website" />
-  <title>thattarch's Portfolio</title>
-  <link rel="icon" href="/images/icon.png" type="image/png" />
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Keyframe animation for the gradient */
-    @keyframes gradientAnimation {
-      0% {
-        background-position: 0% 50%;
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2B2D31" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://127.0.0.1:5500/index.html" />
+    <title>thattarch.xyz</title>
+    <link rel="icon" href="images/icon.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Keyframe animation for the gradient */
+      @keyframes gradientAnimation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
       }
-
-      50% {
-        background-position: 100% 50%;
+      /* Apply the gradient to the body or container */
+      body {
+        height: 100vh;
+        margin: 0;
+        background: linear-gradient(45deg, #ff6ec4, #7873f5, #4f9de6, #34e89e);
+        background-size: 600% 600%; /* Larger background for smooth transitions */
+        animation: gradientAnimation 15s ease infinite; /* 15s duration, ease effect */
+        animation: gradientAnimation 15s ease infinite;
+        background-attachment: fixed; /* Fixes the gradient background */
+        overflow-x: hidden; /* Prevents horizontal scrolling */
       }
-
-      100% {
-        background-position: 0% 50%;
+    @media (max-width: 768px) {
+      body {
+        background-size: 300% 300%; /* Smaller background size for mobile */
       }
     }
-
-    body::before {
-      content: '';
-      position: fixed;
-      /* Fixes the overlay in place while scrolling */
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.35);
-      /* Semi-transparent black */
-      z-index: 1;
-      /* Ensures it stays on top of the gradient */
-      pointer-events: none;
-      /* Allows interaction with the page content */
-    }
-
-    /* Apply the gradient to the body or container */
-    body {
-      height: 100vh;
-      margin: 0;
-      background: linear-gradient(45deg, #ff6ec4, #7873f5, #4f9de6, #34e89e);
-      background-size: 400% 400%;
-      /* Larger background for smooth transitions */
-      animation: gradientAnimation 15s ease infinite;
-      /* 15s duration, ease effect */
-      position: relative;
-      /* Required for the overlay positioning */
-    }
-  </style>
-</head>
+    </style>
+  </head>
 
 <body>
   <header>
