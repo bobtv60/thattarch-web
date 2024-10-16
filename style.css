@@ -286,6 +286,7 @@ iframe {
 a {
   font-family: Gotham, Arial;
   font-size: 18px;
+  line-height: 20px;
   color: rgb(5, 224, 151);
 }
 
