@@ -139,6 +139,7 @@ nav {
 .hamburger {
   display: none;
   cursor: pointer;
+  z-index: 2;
 }
 
 .bar {
