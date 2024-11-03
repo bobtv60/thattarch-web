@@ -1,153 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#2B2D31" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://127.0.0.1:5500/index.html" />
-    <title>thattarch.xyz</title>
-    <link rel="icon" href="images/icon.png" type="image/png" />
-    <link rel="stylesheet" href="style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
     <style>
-      /* Keyframe animation for the gradient */
-      @keyframes gradientAnimation {
-        0% {
-          background-position: 0% 50%;
+        body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+            background-size: 400% 400%;
+            animation: gradientBG 8s ease infinite;
+            font-family: Arial, sans-serif;
         }
-        50% {
-          background-position: 100% 50%;
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
-        100% {
-          background-position: 0% 50%;
+
+        h1 {
+            font-size: 4rem;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
         }
-      }
-      /* Apply the gradient to the body or container */
-      body {
-        height: 100vh;
-        margin: 0;
-        background: linear-gradient(45deg, #ff6ec4, #7873f5, #4f9de6, #34e89e);
-        background-size: 600% 600%; /* Larger background for smooth transitions */
-        animation: gradientAnimation 15s ease infinite; /* 15s duration, ease effect */
-        animation: gradientAnimation 15s ease infinite;
-        background-attachment: fixed; /* Fixes the gradient background */
-        overflow-x: hidden; /* Prevents horizontal scrolling */
-      }
-    @media (max-width: 768px) {
-      body {
-        background-size: 300% 300%; /* Smaller background size for mobile */
-      }
-    }
     </style>
-  </head>
-  <body>
-    <header>
-      <a href="/"><img class="LO" height="32" src="" alt="" draggable="false" /></a>
-      <nav>
-        <a href="/" class="page-link">Home</a>
-        <a href="about" class="page-link">About Me</a>
-        <a href="work" class="page-link">My Work</a>
-        <a href="contacts" class="page-link">Contacts</a>
-      </nav>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero-section">
-        <div class="hi">
-          <p class="headline">Welcome<br />to my <span class="auto-typing"></span></p>
-          <p class="subheadline">
-            Here you can find out more about me, my past projects and work and also my contacts! Scroll down for more.
-          </p>
-          <!--<a class="buy-now" href="https://www.roblox.com/games/9755675884" target="_blank">Buy Now</a>-->
-        </div>
-        <img width="500" src="images/noFilter.png" alt="product" draggable="false" />
-      </section>
-
-      <section class="feature-section">
-        <p class="feature-headline"><span>Why</span> hire me for a commission or project?</p>
-        <div class="feature-container">
-          <div class="feature">
-            <p class="feature-title">
-              Good Experience
-            </p>
-            <p class="feature-description">
-              I'm experienced with a number of programming languages, and have some experience in designing UI although it is not my primary focus. You can view my past work on this same website <a href="work">here</a>. I've been coding for 2 years.
-            </p>
-          </div>
-        </div>
-        <div class="feature-container">
-          <div class="feature">
-            <p class="feature-title">
-              Cheap Payment
-            </p>
-            <p class="feature-description">
-              I work for a very small amount compared to other developers who charge more, as I'm passionate about the work I do. I also work for free sometimes, it all depends on the project or commission but I can always guarantee a very low price.
-            </p>
-          </div>
-        </div>
-        <div class="feature-container">
-          <div class="feature">
-            <p class="feature-title">
-              Quality Work
-            </p>
-            <p class="feature-description">
-              Despite cheap prices, my work is kept to a high standard that you would typically expect from any developer. My code is always organized and easy to read so that you or other developers working on the same project can see what the function of the script is.
-            </p>
-          </div>
-        </div>
-        <div class="feature-container">
-          <div class="feature">
-            <p class="feature-title">
-              Great Communication
-            </p>
-            <p class="feature-description">
-              I will always communicate regularly with you or other people involved in the development so that we're all on the same page and can understand how progress is coming along. I regularly check and respond to all Discord DMs I get and my response times are usually relatively quick.
-            </p>
-          </div>
-        </div>
-        <!--<div class="feature-container">
-          <div class="feature">
-            <img class="feature-icon" src="/images/icons/tag.png" alt="icon" draggable="false" />
-            <p class="feature-name">Unbeatable Pricing</p>
-            <p class="feature-description">
-              We focus on having reasonable prices which makes our products the most affordable in the industry.
-            </p>
-          </div>
-          <div class="feature">
-            <img class="feature-icon" src="/images/icons/clipboard.png" alt="icon" draggable="false" />
-            <p class="feature-name">Outstanding Details</p>
-            <p class="feature-description">
-              Our models are made with precision and careful attention to every detail by our modelers.
-            </p>
-          </div>
-          <div class="feature">
-            <img class="feature-icon" src="/images/icons/chat.png" alt="icon" draggable="false" />
-            <p class="feature-name">Support Available</p>
-            <p class="feature-description">
-              Our support team is here to assist you with any issues or questions you may have regarding our products.
-            </p>
-          </div>
-        </div>
-      </section>-->
-
-
-   
-
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-      var typed = new Typed(".auto-typing", {
-        strings: ["website", "portfolio", "about me"],
-        typeSpeed: 125,
-        backSpeed: 125,
-        loop: true,
-        backDelay: 3000,
-      });
-    </script>
-    <script src="/menu.js"></script>
-  </body>
+</head>
+<body>
+    <h1>Coming Soon</h1>
+</body>
 </html>
